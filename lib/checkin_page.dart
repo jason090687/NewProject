@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 class CustomBottomSheet extends StatefulWidget {
+  const CustomBottomSheet({super.key});
+
   @override
   _CustomBottomSheetState createState() => _CustomBottomSheetState();
 }

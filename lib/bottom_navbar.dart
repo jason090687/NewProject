@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:tanle/nav_pages/Booking_nav.dart';
+import 'package:tanle/nav_pages/chats_nav.dart';
+import 'package:tanle/nav_pages/favorites_nav.dart';
 import 'package:tanle/nav_pages/home_page.dart';
-import 'package:tanle/profile_page.dart';
+import 'package:tanle/nav_pages/profile_page.dart';
 
 class NavBarPages extends StatefulWidget {
   const NavBarPages({super.key});
@@ -20,6 +23,9 @@ class _NavBarPagesState extends State<NavBarPages> {
 
   final List<Widget> _pages = [
     const HomePage(),
+    const FavoritePage(),
+    const MyBookingScreen(),
+    const ChatApp(),
     ProfilePage(),
   ];
 

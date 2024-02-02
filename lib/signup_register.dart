@@ -38,9 +38,9 @@ class _SignUpPageState extends State<SignUpPage> {
         // show error message
         showErrorMessage('Password don\t match!');
       }
-      Navigator.pop(context);
+      Navigator.of(context, rootNavigator: true).pop();
     } on FirebaseAuthException catch (e) {
-      Navigator.pop(context);
+      Navigator.of(context, rootNavigator: true).pop();
 
       showErrorMessage(e.code);
     }
